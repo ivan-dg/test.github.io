@@ -1,7 +1,6 @@
 import 'package:briefcase/constants/constants.dart';
 import 'package:briefcase/lib/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stroke_text/stroke_text.dart';
@@ -83,7 +82,7 @@ class _PubsPageState extends State<PubsPage> {
                           child: Column(
                             children: [
                               Text(
-                                'onX Maps is leading the trail in private and public land mapping data.',
+                                '¡Descarga Pubs y descubre los mejores lugares de tu ciudad! Con Pubs podrás:',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 28,
@@ -92,7 +91,7 @@ class _PubsPageState extends State<PubsPage> {
                               ),
                               Gap(20),
                               Text(
-                                'The web and mobile apps can be used for hunting, hiking, fishing, backcountry, land boundaries, watersports, camping, and more.',
+                                'Explorar los mejores bares y pubs. Ver menús detallados. Encontrar eventos y promociones exclusivas.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -110,7 +109,7 @@ class _PubsPageState extends State<PubsPage> {
                           child: Column(
                             children: [
                               Text(
-                                'The website presents an equal balance between supportive imagery, video, features, and information.',
+                                'Pedir tus canciones favoritas. Votar por las canciones que más te gustan (¡las más votadas sonarán en el pub!).',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -121,7 +120,7 @@ class _PubsPageState extends State<PubsPage> {
                               ),
                               Gap(20),
                               Text(
-                                'Video backgrounds, carousels, and informative overlays were developed to display the many uses of the onX app.',
+                                'Conocer nuevas personas en el lugar donde estés.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -136,23 +135,37 @@ class _PubsPageState extends State<PubsPage> {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: Constants.paddingH),
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          height: 500,
-                          'assets/pubs_1.png',
-                        ),
-                        const Gap(50),
-                        Image.asset(
-                          height: 500,
-                          'assets/pubs_2.png',
-                        ),
-                      ],
+                  Container(
+                    color: Theme.of(context).scaffoldBackgroundColor,
+                    padding: const EdgeInsets.symmetric(vertical: 30),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 110),
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            height: 500,
+                            'assets/pubs_1.png',
+                          ),
+                          const Gap(50),
+                          Image.asset(
+                            height: 500,
+                            'assets/pubs_2.png',
+                          ),
+                          const Gap(50),
+                          Image.asset(
+                            height: 500,
+                            'assets/pubs_3.png',
+                          ),
+                          const Gap(50),
+                          Image.asset(
+                            height: 500,
+                            'assets/pubs_4.png',
+                          ),
+                        ],
+                      ),
                     ),
                   ),
+                  const Gap(200),
                 ],
               ),
             ),

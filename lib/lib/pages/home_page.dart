@@ -1,4 +1,5 @@
 import 'package:briefcase/constants/constants.dart';
+import 'package:briefcase/lib/pages/mepet_page.dart';
 import 'package:briefcase/lib/pages/pubs_page.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -151,7 +152,14 @@ class _HomePageState extends State<HomePage>
                   ),
                   TextOptionWidget(
                     title: 'MEPET',
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const MepetPage(),
+                        ),
+                      );
+                    },
                   ),
                   TextOptionWidget(
                     title: 'CONSULTORIO',
@@ -183,7 +191,10 @@ class _HomePageState extends State<HomePage>
 class NameWidget extends StatefulWidget {
   const NameWidget({
     super.key,
+    this.color = Colors.white,
   });
+
+  final Color? color;
 
   @override
   State<NameWidget> createState() => _NameWidgetState();
@@ -226,7 +237,9 @@ class _NameWidgetState extends State<NameWidget>
         },
         child: Text(
           'IVAN \nGUSTIN \nCO.',
-          style: Theme.of(context).textTheme.titleMedium,
+          style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                color: widget.color,
+              ),
         ),
       ),
     );
