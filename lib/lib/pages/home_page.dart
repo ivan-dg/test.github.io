@@ -175,11 +175,40 @@ class _HomePageState extends State<HomePage>
                       );
                     },
                   ),
-                  const TextOptionWidget(title: 'PUBS'),
-                  const TextOptionWidget(title: 'MEPET'),
-                  const TextOptionWidget(
+                  TextOptionWidget(
+                    title: 'PUBS',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const PubsPage(),
+                        ),
+                      );
+                    },
+                  ),
+                  TextOptionWidget(
+                    title: 'MEPET',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const MepetPage(),
+                        ),
+                      );
+                    },
+                  ),
+                  TextOptionWidget(
                     title: 'CONSULTORIO',
                     subtitle: 'VIRUTAL',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const VirtualOfficePage(),
+                        ),
+                      );
+                    },
                   ),
                   const Gap(50),
                 ],

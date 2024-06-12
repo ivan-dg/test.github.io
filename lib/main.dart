@@ -39,7 +39,7 @@ class MainApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const VirtualOfficePage(),
+      home: const HomePage(),
     );
   }
 }
