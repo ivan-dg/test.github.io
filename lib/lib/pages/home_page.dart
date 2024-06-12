@@ -1,6 +1,7 @@
 import 'package:briefcase/constants/constants.dart';
 import 'package:briefcase/lib/pages/mepet_page.dart';
 import 'package:briefcase/lib/pages/pubs_page.dart';
+import 'package:briefcase/lib/pages/virtual_office_page.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -164,7 +165,15 @@ class _HomePageState extends State<HomePage>
                   TextOptionWidget(
                     title: 'CONSULTORIO',
                     subtitle: 'VIRUTAL',
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const VirtualOfficePage(),
+                        ),
+                      );
+                    },
                   ),
                   const TextOptionWidget(title: 'PUBS'),
                   const TextOptionWidget(title: 'MEPET'),
@@ -172,12 +181,7 @@ class _HomePageState extends State<HomePage>
                     title: 'CONSULTORIO',
                     subtitle: 'VIRUTAL',
                   ),
-                  const TextOptionWidget(title: 'PUBS'),
-                  const TextOptionWidget(title: 'MEPET'),
-                  const TextOptionWidget(
-                    title: 'CONSULTORIO',
-                    subtitle: 'VIRUTAL',
-                  ),
+                  const Gap(50),
                 ],
               ),
             ),
