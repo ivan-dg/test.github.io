@@ -1,9 +1,10 @@
 import 'package:briefcase/constants/constants.dart';
-import 'package:briefcase/lib/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:stroke_text/stroke_text.dart';
+
+import '../widgets/name_widget.dart';
 
 class VirtualOfficePage extends StatefulWidget {
   const VirtualOfficePage({super.key});
