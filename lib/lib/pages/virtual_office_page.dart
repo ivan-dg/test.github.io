@@ -152,17 +152,17 @@ class _VirtualOfficePageState extends State<VirtualOfficePage> {
                             height: 500,
                             'assets/cons_virt_2.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/cons_virt_3.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/cons_virt_5.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/cons_virt_4.png',

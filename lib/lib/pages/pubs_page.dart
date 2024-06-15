@@ -146,17 +146,17 @@ class _PubsPageState extends State<PubsPage> {
                             height: 500,
                             'assets/pubs_1.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/pubs_2.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/pubs_3.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/pubs_4.png',

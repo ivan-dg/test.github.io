@@ -150,17 +150,17 @@ class _MepetPageState extends State<MepetPage> {
                             height: 500,
                             'assets/mepet_2.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/mepet_3.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/mepet_4.png',
                           ),
-                          const Gap(50),
+                          const Spacer(),
                           Image.asset(
                             height: 500,
                             'assets/mepet_5.png',
