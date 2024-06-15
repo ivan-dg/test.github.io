@@ -8,11 +8,13 @@ class TextOptionWidget extends StatefulWidget {
     required this.title,
     this.subtitle = '',
     this.onTap,
+    this.alignment = Alignment.center,
   });
 
   final String title;
   final String? subtitle;
   final Function()? onTap;
+  final AlignmentGeometry? alignment;
 
   @override
   State<TextOptionWidget> createState() => _TextOptionWidgetState();
@@ -33,7 +35,7 @@ class _TextOptionWidgetState extends State<TextOptionWidget> {
     final screensize = MediaQuery.sizeOf(context);
     final fontsize = screensize.width * 0.075;
     return Transform(
-      alignment: Alignment.center,
+      alignment: widget.alignment,
       transform: matrix, // rotación en el eje Y
       child: MouseRegion(
         onEnter: (_) {
@@ -49,7 +51,9 @@ class _TextOptionWidgetState extends State<TextOptionWidget> {
         child: GestureDetector(
           onTap: widget.onTap,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: widget.alignment == Alignment.topLeft
+                ? CrossAxisAlignment.start
+                : CrossAxisAlignment.end,
             children: [
               Row(
                 children: [
