@@ -8755,12 +8755,13 @@ _.c=null},
 a9i:function a9i(a){this.a=a},
 a9h:function a9h(){},
 BE:function BE(){},
-ij:function ij(a,b,c,d,e){var _=this
+ij:function ij(a,b,c,d,e,f){var _=this
 _.c=a
 _.d=b
 _.e=c
 _.f=d
-_.a=e},
+_.r=e
+_.a=f},
 OZ:function OZ(a){var _=this
 _.d=!1
 _.a=null
@@ -41122,8 +41123,8 @@ L(a){return A.a1J(new A.mJ(new A.a8f(this),null))},
 Xz(a){var s,r=null,q=this.e
 q===$&&A.a()
 s=t.D
-return A.fc(A.b([new A.bn(B.C0,A.cn(A.b([B.jo,B.cN,A.kf(A.fc(A.b([A.cn(A.b([A.bL("Briefcase of Ivan Gustin",r,r,A.a9(a).p2.Q,r,r,r),A.bL("Software Engineer",r,r,A.a9(a).p2.Q,r,r,r)],s),B.Z,B.t,B.v),B.cN,A.cn(A.b([A.bL("Pasto, Colombia",r,r,A.a9(a).p2.Q,r,r,r),A.akr("ivandgustin@gmail.com",A.a9(a).p2.Q.vr(B.bA))],s),B.Z,B.t,B.v),B.cN,A.cn(A.b([A.j3(r,A.fc(A.b([A.bL("01",r,r,A.a9(a).p2.Q.Nt(10,B.a4),r,r,r),B.Co,A.bL("Linkedin",r,r,A.a9(a).p2.Q.vr(B.bA),r,r,r)],s),B.U,B.t,B.v),B.ad,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a8b(this),r,r,r)],s),B.Z,B.t,B.v)],s),B.U,B.t,B.v),q)],s),B.Z,B.rz,B.v),r),B.aI,A.nF(new A.bn(B.BS,A.cn(A.b([B.mh,new A.ij("PUBS","",new A.a8c(a),B.O,r),new A.ij("MEPET","",new A.a8d(a),B.O,r),new A.ij("CONSULTORIO","VIRUTAL",new A.a8e(a),B.O,r),B.mh],s),B.ig,B.t,B.v),r))],s),B.U,B.t,B.v)},
-Xs(a){var s=null,r=t.D,q=A.cn(A.b([B.N,new A.ij("PUBS","",new A.a84(a),B.bu,s),new A.ij("MEPET","",new A.a85(a),B.bu,s),new A.ij("CONSULTORIO","     VIRUTAL",new A.a86(a),B.bu,s),B.N],r),B.Z,B.t,B.v),p=this.e
+return A.fc(A.b([new A.bn(B.C0,A.cn(A.b([B.jo,B.cN,A.kf(A.fc(A.b([A.cn(A.b([A.bL("Briefcase of Ivan Gustin",r,r,A.a9(a).p2.Q,r,r,r),A.bL("Software Engineer",r,r,A.a9(a).p2.Q,r,r,r)],s),B.Z,B.t,B.v),B.cN,A.cn(A.b([A.bL("Pasto, Colombia",r,r,A.a9(a).p2.Q,r,r,r),A.akr("ivandgustin@gmail.com",A.a9(a).p2.Q.vr(B.bA))],s),B.Z,B.t,B.v),B.cN,A.cn(A.b([A.j3(r,A.fc(A.b([A.bL("01",r,r,A.a9(a).p2.Q.Nt(10,B.a4),r,r,r),B.Co,A.bL("Linkedin",r,r,A.a9(a).p2.Q.vr(B.bA),r,r,r)],s),B.U,B.t,B.v),B.ad,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new A.a8b(this),r,r,r)],s),B.Z,B.t,B.v)],s),B.U,B.t,B.v),q)],s),B.Z,B.rz,B.v),r),B.aI,A.nF(new A.bn(B.BS,A.cn(A.b([B.mh,new A.ij("PUBS","",new A.a8c(a),B.O,0.075,r),new A.ij("MEPET","",new A.a8d(a),B.O,0.075,r),new A.ij("CONSULTORIO","VIRUTAL",new A.a8e(a),B.O,0.075,r),B.mh],s),B.ig,B.t,B.v),r))],s),B.U,B.t,B.v)},
+Xs(a){var s=null,r=t.D,q=A.cn(A.b([B.N,new A.ij("PUBS","",new A.a84(a),B.bu,0.1,s),new A.ij("MEPET","",new A.a85(a),B.bu,0.1,s),new A.ij("CONSULTORIO","     VIRUTAL",new A.a86(a),B.bu,0.1,s),B.N],r),B.Z,B.t,B.v),p=this.e
 p===$&&A.a()
 return A.nF(new A.bn(B.BZ,A.cn(A.b([q,B.Cp,B.jo,B.N,A.kf(A.cn(A.b([A.bL("Briefcase of Ivan Gustin",s,s,A.a9(a).p2.Q,s,s,s),A.bL("Software Engineer",s,s,A.a9(a).p2.Q,s,s,s),B.N,A.bL("Pasto, Colombia",s,s,A.a9(a).p2.Q,s,s,s),A.akr("ivandgustin@gmail.com",A.a9(a).p2.Q.vr(B.bA)),B.N,A.j3(s,A.fc(A.b([A.bL("01",s,s,A.a9(a).p2.Q.Nt(10,B.a4),s,s,s),B.Cn,A.bL("Linkedin",s,s,A.a9(a).p2.Q.vr(B.bA),s,s,s)],r),B.U,B.t,B.v),B.ad,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.a87(this),s,s,s)],r),B.Z,B.t,B.v),p)],r),B.Z,B.t,B.v),s))}}
 A.a8f.prototype={
@@ -41309,11 +41310,12 @@ e[8]=i*o+j*s
 e[9]=k*o+l*s
 e[10]=m*o+n*s
 e[11]=p*o+q*s
-h=A.by(a,B.ey,t.w).w.a.a*0.075
-q=g.a
-o=q.f
-q=q.e
-e=o.i(0,B.bu)?B.Z:B.ig
+q=A.by(a,B.ey,t.w).w
+o=g.a
+h=q.a.a*o.r
+q=o.f
+o=o.e
+e=q.i(0,B.bu)?B.Z:B.ig
 p=A.l_(f,f,B.k,1,"/",f,A.iE().$4$color$fontSize$fontWeight$height(A.V(B.c.al(127.5),0,0,0),85,B.a4,1.1))
 n=A.cf(0,250)
 m=g.d?B.z:B.k
@@ -41323,7 +41325,7 @@ m=A.fc(A.b([p,A.Ix(new A.abj(g,h),n,new A.e7(B.k,m),l)],k),B.U,B.t,B.v)
 n=g.a.d
 p=A.cf(0,250)
 j=g.d?B.z:B.k
-return A.It(o,A.mU(A.j3(f,A.cn(A.b([m,new A.IN(A.Ix(new A.abk(g,h),p,new A.e7(B.k,j),l),n.length!==0,f)],k),e,B.t,B.v),B.ad,!1,f,f,f,f,f,f,f,f,f,f,f,f,f,f,q,f,f,f),B.c8,new A.abl(g),new A.abm(g),f),f,d,!0)}}
+return A.It(q,A.mU(A.j3(f,A.cn(A.b([m,new A.IN(A.Ix(new A.abk(g,h),p,new A.e7(B.k,j),l),n.length!==0,f)],k),e,B.t,B.v),B.ad,!1,f,f,f,f,f,f,f,f,f,f,f,f,f,f,o,f,f,f),B.c8,new A.abl(g),new A.abm(g),f),f,d,!0)}}
 A.abl.prototype={
 $1(a){var s=this.a
 s.ao(new A.abi(s))},
