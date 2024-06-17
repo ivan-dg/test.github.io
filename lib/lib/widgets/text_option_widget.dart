@@ -9,12 +9,14 @@ class TextOptionWidget extends StatefulWidget {
     this.subtitle = '',
     this.onTap,
     this.alignment = Alignment.center,
+    required this.hFactor,
   });
 
   final String title;
   final String? subtitle;
   final Function()? onTap;
   final AlignmentGeometry? alignment;
+  final double hFactor;
 
   @override
   State<TextOptionWidget> createState() => _TextOptionWidgetState();
@@ -33,7 +35,8 @@ class _TextOptionWidgetState extends State<TextOptionWidget> {
       ..rotateY(0.8)
       ..rotateX(-0.1);
     final screensize = MediaQuery.sizeOf(context);
-    final fontsize = screensize.width * 0.075;
+    final fontsize = screensize.width * widget.hFactor;
+    // final fontsize = screensize.width * 0.075;
     return Transform(
       alignment: widget.alignment,
       transform: matrix, // rotación en el eje Y

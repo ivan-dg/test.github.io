@@ -166,6 +166,7 @@ class _HomePageState extends State<HomePage>
                       ),
                     );
                   },
+                  hFactor: 0.075,
                 ),
                 TextOptionWidget(
                   title: 'MEPET',
@@ -177,6 +178,7 @@ class _HomePageState extends State<HomePage>
                       ),
                     );
                   },
+                  hFactor: 0.075,
                 ),
                 TextOptionWidget(
                   title: 'CONSULTORIO',
@@ -190,6 +192,7 @@ class _HomePageState extends State<HomePage>
                       ),
                     );
                   },
+                  hFactor: 0.075,
                 ),
                 const Gap(50),
               ],
@@ -222,6 +225,7 @@ class _HomePageState extends State<HomePage>
                       ),
                     );
                   },
+                  hFactor: 0.1,
                 ),
                 TextOptionWidget(
                   alignment: Alignment.topLeft,
@@ -234,6 +238,7 @@ class _HomePageState extends State<HomePage>
                       ),
                     );
                   },
+                  hFactor: 0.1,
                 ),
                 TextOptionWidget(
                   alignment: Alignment.topLeft,
@@ -248,6 +253,7 @@ class _HomePageState extends State<HomePage>
                       ),
                     );
                   },
+                  hFactor: 0.1,
                 ),
                 const Gap(20),
               ],
