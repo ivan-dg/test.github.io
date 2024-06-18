@@ -1,4 +1,5 @@
 import 'package:briefcase/constants/constants.dart';
+import 'package:briefcase/lib/pages/pubs_page.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -290,24 +291,24 @@ class _VirtualOfficePageState extends State<VirtualOfficePage> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/cons_virt_2.png',
+                    url: 'assets/cons_virt_2.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/cons_virt_3.png',
+                    url: 'assets/cons_virt_3.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/cons_virt_5.png',
+                    url: 'assets/cons_virt_5.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/cons_virt_4.png',
+                    url: 'assets/cons_virt_4.png',
                   ),
                 ],
               ),

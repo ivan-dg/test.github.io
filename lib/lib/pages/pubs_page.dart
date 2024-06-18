@@ -44,6 +44,7 @@ class _PubsPageState extends State<PubsPage> {
   }
 
   Widget _buildWideLayout(BuildContext context) {
+    double height = 500;
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,24 +159,24 @@ class _PubsPageState extends State<PubsPage> {
               padding: const EdgeInsets.symmetric(horizontal: 110),
               child: Row(
                 children: [
-                  Image.asset(
-                    height: 500,
-                    'assets/pubs_1.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/pubs_1.png',
                   ),
                   const Spacer(),
-                  Image.asset(
-                    height: 500,
-                    'assets/pubs_2.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/pubs_2.png',
                   ),
                   const Spacer(),
-                  Image.asset(
-                    height: 500,
-                    'assets/pubs_3.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/pubs_3.png',
                   ),
                   const Spacer(),
-                  Image.asset(
-                    height: 500,
-                    'assets/pubs_4.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/pubs_4.png',
                   ),
                 ],
               ),
@@ -279,24 +280,24 @@ class _PubsPageState extends State<PubsPage> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/pubs_1.png',
+                    url: 'assets/pubs_1.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/pubs_2.png',
+                    url: 'assets/pubs_2.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/pubs_3.png',
+                    url: 'assets/pubs_3.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/pubs_4.png',
+                    url: 'assets/pubs_4.png',
                   ),
                 ],
               ),
@@ -304,6 +305,30 @@ class _PubsPageState extends State<PubsPage> {
           ),
           const Gap(100),
         ],
+      ),
+    );
+  }
+}
+
+class ImagePhoneWidget extends StatelessWidget {
+  const ImagePhoneWidget({
+    super.key,
+    required this.height,
+    required this.url,
+  });
+
+  final double height;
+  final String url;
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: const BorderRadius.all(
+        Radius.circular(15),
+      ),
+      child: Image.asset(
+        height: height,
+        url,
       ),
     );
   }

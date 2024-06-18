@@ -1,4 +1,5 @@
 import 'package:briefcase/constants/constants.dart';
+import 'package:briefcase/lib/pages/pubs_page.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -47,6 +48,7 @@ class _MepetPageState extends State<MepetPage> {
   }
 
   Widget _buildWideLayout(BuildContext context) {
+    double height = 500;
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,24 +165,24 @@ class _MepetPageState extends State<MepetPage> {
               padding: const EdgeInsets.symmetric(horizontal: 110),
               child: Row(
                 children: [
-                  Image.asset(
-                    height: 500,
-                    'assets/mepet_2.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/mepet_2.png',
                   ),
                   const Spacer(),
-                  Image.asset(
-                    height: 500,
-                    'assets/mepet_3.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/mepet_3.png',
                   ),
                   const Spacer(),
-                  Image.asset(
-                    height: 500,
-                    'assets/mepet_4.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/mepet_4.png',
                   ),
                   const Spacer(),
-                  Image.asset(
-                    height: 500,
-                    'assets/mepet_5.png',
+                  ImagePhoneWidget(
+                    height: height,
+                    url: 'assets/mepet_5.png',
                   ),
                 ],
               ),
@@ -286,24 +288,24 @@ class _MepetPageState extends State<MepetPage> {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/mepet_2.png',
+                    url: 'assets/mepet_2.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/mepet_3.png',
+                    url: 'assets/mepet_3.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/mepet_4.png',
+                    url: 'assets/mepet_4.png',
                   ),
                   const Gap(20),
-                  Image.asset(
+                  ImagePhoneWidget(
                     height: height,
-                    'assets/mepet_5.png',
+                    url: 'assets/mepet_5.png',
                   ),
                 ],
               ),

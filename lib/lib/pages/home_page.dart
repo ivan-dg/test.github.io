@@ -49,15 +49,27 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          if (constraints.maxWidth > 800) {
-            // Layout para pantallas anchas
-            return _buildWideLayout(context);
-          } else {
-            // Layout para pantallas estrechas
-            return _buildNarrowLayout(context);
-          }
+      body: TweenAnimationBuilder(
+        duration: const Duration(seconds: 1),
+        tween: ColorTween(
+          begin: Colors.grey,
+          end: Theme.of(context).scaffoldBackgroundColor,
+        ),
+        builder: (BuildContext context, dynamic value, Widget? child) {
+          return Container(
+            color: value,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                if (constraints.maxWidth > 800) {
+                  return _buildWideLayout(context);
+                } else {
+                  return _buildNarrowLayout(context);
+                }
+              },
+            ),
+          );
         },
       ),
     );
@@ -152,50 +164,53 @@ class _HomePageState extends State<HomePage>
         SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(right: 30),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                const Gap(50),
-                TextOptionWidget(
-                  title: 'PUBS',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) => const PubsPage(),
-                      ),
-                    );
-                  },
-                  hFactor: 0.075,
-                ),
-                TextOptionWidget(
-                  title: 'MEPET',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) => const MepetPage(),
-                      ),
-                    );
-                  },
-                  hFactor: 0.075,
-                ),
-                TextOptionWidget(
-                  title: 'CONSULTORIO',
-                  subtitle: 'VIRUTAL',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) =>
-                            const VirtualOfficePage(),
-                      ),
-                    );
-                  },
-                  hFactor: 0.075,
-                ),
-                const Gap(50),
-              ],
+            child: FadeTransition(
+              opacity: _animation,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  const Gap(50),
+                  TextOptionWidget(
+                    title: 'PUBS',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const PubsPage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.075,
+                  ),
+                  TextOptionWidget(
+                    title: 'MEPET',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const MepetPage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.075,
+                  ),
+                  TextOptionWidget(
+                    title: 'CONSULTORIO',
+                    subtitle: 'VIRUTAL',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const VirtualOfficePage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.075,
+                  ),
+                  const Gap(50),
+                ],
+              ),
             ),
           ),
         )
@@ -210,53 +225,56 @@ class _HomePageState extends State<HomePage>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Gap(20),
-                TextOptionWidget(
-                  alignment: Alignment.topLeft,
-                  title: 'PUBS',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) => const PubsPage(),
-                      ),
-                    );
-                  },
-                  hFactor: 0.1,
-                ),
-                TextOptionWidget(
-                  alignment: Alignment.topLeft,
-                  title: 'MEPET',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) => const MepetPage(),
-                      ),
-                    );
-                  },
-                  hFactor: 0.1,
-                ),
-                TextOptionWidget(
-                  alignment: Alignment.topLeft,
-                  title: 'CONSULTORIO',
-                  subtitle: '     VIRUTAL',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<void>(
-                        builder: (BuildContext context) =>
-                            const VirtualOfficePage(),
-                      ),
-                    );
-                  },
-                  hFactor: 0.1,
-                ),
-                const Gap(20),
-              ],
+            FadeTransition(
+              opacity: _animation,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Gap(20),
+                  TextOptionWidget(
+                    alignment: Alignment.topLeft,
+                    title: 'PUBS',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const PubsPage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.1,
+                  ),
+                  TextOptionWidget(
+                    alignment: Alignment.topLeft,
+                    title: 'MEPET',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const MepetPage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.1,
+                  ),
+                  TextOptionWidget(
+                    alignment: Alignment.topLeft,
+                    title: 'CONSULTORIO',
+                    subtitle: '     VIRUTAL',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const VirtualOfficePage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.1,
+                  ),
+                  const Gap(20),
+                ],
+              ),
             ),
             const Gap(90),
             const NameWidget(),
