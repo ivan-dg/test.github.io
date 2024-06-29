@@ -189,7 +189,7 @@ class _PubsPageState extends State<PubsPage> {
   }
 
   Widget _buildNarrowLayout(BuildContext context) {
-    double height = 500;
+    double height = 450;
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -327,8 +327,10 @@ class ImagePhoneWidget extends StatelessWidget {
         Radius.circular(15),
       ),
       child: Image.asset(
-        height: height,
+        height: 540,
+        width: 250,
         url,
+        fit: BoxFit.fill,
       ),
     );
   }

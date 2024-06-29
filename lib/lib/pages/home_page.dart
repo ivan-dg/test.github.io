@@ -1,4 +1,5 @@
 import 'package:briefcase/constants/constants.dart';
+import 'package:briefcase/lib/pages/detail_info_page.dart';
 import 'package:briefcase/lib/pages/mepet_page.dart';
 import 'package:briefcase/lib/pages/pubs_page.dart';
 import 'package:briefcase/lib/pages/virtual_office_page.dart';
@@ -183,6 +184,33 @@ class _HomePageState extends State<HomePage>
                     hFactor: 0.075,
                   ),
                   TextOptionWidget(
+                    title: 'TRIPPSTER',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const DetailInfoPage(
+                            colorImagesBack: Color(0XFF00C535),
+                            colorBackground: Colors.white,
+                            title: 'TRIPPSTER',
+                            description:
+                                'Bievenido a TRIPPSTER, en Trippster podrás conectar con viajeros de todo el mundo y compartir con ellos experiencias auténticas. Descubre el Alma Viajera: Quiénes Somos en Trippster, En Trippster, somos apasionados exploradores y expertos en hacer realidad tus sueños de viaje. Con años de experiencia en el sector, nos enorgullece ofrecer experiencias únicas y personalizadas que van más allá de lo convencional. Nuestro compromiso es convertir cada viaje en una aventura inolvidable, brindando un servicio excepcional y descubriendo destinos extraordinarios, ¡Bienvenido a Trippster, donde cada viaje es una historia por contar!',
+                            coverImage: 'assets/trippster_6.png',
+                            images: [
+                              'assets/trippster_1.png',
+                              'assets/trippster_3.png',
+                              'assets/trippster_5.png',
+                              'assets/trippster_4.png',
+                              'assets/trippster_2.png'
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                    hFactor: 0.075,
+                  ),
+                  TextOptionWidget(
                     title: 'MEPET',
                     onTap: () {
                       Navigator.push(
@@ -239,6 +267,34 @@ class _HomePageState extends State<HomePage>
                         context,
                         MaterialPageRoute<void>(
                           builder: (BuildContext context) => const PubsPage(),
+                        ),
+                      );
+                    },
+                    hFactor: 0.1,
+                  ),
+                  TextOptionWidget(
+                    alignment: Alignment.topLeft,
+                    title: 'TRIPPSTER',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute<void>(
+                          builder: (BuildContext context) =>
+                              const DetailInfoPage(
+                            colorImagesBack: Color(0XFF00C535),
+                            colorBackground: Colors.white,
+                            title: 'TRIPPSTER',
+                            description:
+                                'Bievenido a TRIPPSTER, en Trippster podrás conectar con viajeros de todo el mundo y compartir con ellos experiencias auténticas. Descubre el Alma Viajera: Quiénes Somos en Trippster, En Trippster, somos apasionados exploradores y expertos en hacer realidad tus sueños de viaje. Con años de experiencia en el sector, nos enorgullece ofrecer experiencias únicas y personalizadas que van más allá de lo convencional. Nuestro compromiso es convertir cada viaje en una aventura inolvidable, brindando un servicio excepcional y descubriendo destinos extraordinarios, ¡Bienvenido a Trippster, donde cada viaje es una historia por contar!',
+                            coverImage: 'assets/trippster_6.png',
+                            images: [
+                              'assets/trippster_1.png',
+                              'assets/trippster_3.png',
+                              'assets/trippster_5.png',
+                              'assets/trippster_4.png',
+                              'assets/trippster_2.png'
+                            ],
+                          ),
                         ),
                       );
                     },

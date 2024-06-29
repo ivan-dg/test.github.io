@@ -1,3 +1,4 @@
+import 'package:briefcase/lib/pages/detail_info_page.dart';
 import 'package:briefcase/lib/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
